@@ -44,8 +44,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Super secret
-      - shell: bash
         env:
           SUPER_SECRET: ${{ secrets.SuperSecret }}
-        run:
-          echo "This is $SUPER_SECRET"
+        run: echo "This is $SUPER_SECRET"
