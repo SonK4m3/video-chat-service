@@ -1,5 +1,7 @@
 # action.yml
-name: 'Hello World'
+name: Hello World
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
 description: 'Greet someone and record the time'
 inputs:
   who-to-greet:  # id of input
