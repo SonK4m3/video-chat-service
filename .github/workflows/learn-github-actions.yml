@@ -41,10 +41,11 @@ jobs:
         run: echo "$MATRIX_CONTEXT"
 
   sceret-to-log:
+    runs-on: ubuntu-latest
     steps:
       - name: Super secret
       - shell: bash
         env:
           SUPER_SECRET: ${{ secrets.SuperSecret }}
-        run: |
+        run:
           echo "This is $SUPER_SECRET"
