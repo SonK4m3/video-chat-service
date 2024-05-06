@@ -8,4 +8,4 @@ Dockerfile.yaml
 
 /dist
 
-**/deploy.yml
+**/*.ignore.yml
