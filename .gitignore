@@ -5,3 +5,7 @@ node_modules
 
 Dockerfile.yaml
 .dockerignore
+
+/dist
+
+**/deploy.yml

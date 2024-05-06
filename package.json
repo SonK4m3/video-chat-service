@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "cd client && npm start",
-    "build": "cd client && npm build",
-    "dev": "concurrently \"node index.js\"",
+    "build": "webpack",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "eslint": "eslint ./",
+    "eslint-fix": "eslint ./ --fix",
+    "prod": "node dist/final.js"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +29,11 @@
     "mongoose": "^8.3.3",
     "socket.io": "^4.0.1",
     "socket.io-client": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.2.0",
+    "nodemon": "^3.1.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   }
 }
