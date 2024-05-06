@@ -3,9 +3,6 @@ node_modules
 .env
 .env.*
 
-Dockerfile.yaml
-.dockerignore
-
 /dist
 
 **/*.ignore.yml
